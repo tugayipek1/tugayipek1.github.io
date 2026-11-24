@@ -63,14 +63,13 @@ strong{color:var(--text);font-weight:500}
   .side{position:sticky;top:0;height:100vh;width:44%;display:flex;flex-direction:column;justify-content:space-between;padding:6rem 0}
 }
 .who{display:flex;flex-direction:column;gap:0}
-.avatar{width:84px;height:84px;border-radius:50%;object-fit:cover;filter:grayscale(.15);border:1px solid var(--line);margin-bottom:1.5rem}
+.avatar{width:112px;height:112px;border-radius:50%;object-fit:cover;filter:grayscale(.15);border:1px solid var(--line);margin-bottom:1.5rem}
 h1{margin:0;color:var(--text);font-size:clamp(2.25rem,4.5vw,3rem);line-height:1.1;font-weight:700;letter-spacing:-.025em}
 .role{margin:.6rem 0 0;color:var(--text);font-size:1.125rem;font-weight:500;letter-spacing:-.01em}
 .pitch{margin:1rem 0 0;max-width:22rem;line-height:1.6}
-.meta{margin-top:1.25rem;display:flex;flex-wrap:wrap;gap:.35rem 1.25rem;font:400 .8125rem/1.5 var(--mono);color:var(--faint)}
+.meta{margin-top:1.25rem;display:flex;flex-wrap:wrap;gap:.4rem 1.25rem;font-size:.9375rem;line-height:1.5;color:var(--muted)}
 .meta span{display:inline-flex;align-items:center;gap:.4rem}
-.meta svg{width:14px;height:14px}
-.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block}
+.meta svg{width:15px;height:15px;flex:none;color:var(--faint)}
 
 .nav{display:none}
 @media (min-width:1024px){
@@ -89,6 +88,11 @@ h1{margin:0;color:var(--text);font-size:clamp(2.25rem,4.5vw,3rem);line-height:1.
 .links .cv{font:500 .8125rem/1 var(--mono);border:1px solid var(--line);padding:.5rem .75rem;border-radius:6px}
 .links .cv svg{width:15px;height:15px}
 .links .cv:hover{border-color:var(--muted)}
+.lang{display:inline-flex;align-items:center;gap:.5rem;font:500 .8125rem/1 var(--mono);color:var(--faint)}
+.lang span{color:var(--text)}
+.lang a{color:var(--faint)}
+.lang a:hover{color:var(--text)}
+.lang>*+*::before{content:"/";margin-right:.5rem;color:var(--line)}
 .theme{background:none;border:0;padding:0;cursor:pointer;font:inherit}
 .theme .moon{display:none}
 :root[data-theme="dark"] .theme .sun{display:none}
@@ -180,7 +184,7 @@ footer a:hover{color:var(--text)}
   .wrap{display:block;padding:0}
   .side{position:static;height:auto;width:auto;padding:0 0 1rem}
   main{width:auto;padding:0}
-  .nav,.links,.skip,.more,.theme,footer{display:none}
+  .nav,.links,.lang,.skip,.more,.theme,footer{display:none}
   .sec-title{position:static;background:none;padding:0;margin:0 0 .75rem;color:#000}
   section{margin-bottom:1.5rem;break-inside:auto}
   .item,.rows li{break-inside:avoid;padding:.5rem 0}
