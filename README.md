@@ -12,7 +12,6 @@ assets/css/style.css  styles (light/dark, print-friendly)
 assets/js/main.js     theme toggle + active nav section
 assets/img/           portrait, favicon
 assets/icons/         Devicon SVGs
-tugay-ipek-cv.pdf     downloadable resume
 ```
 
-To update the resume, replace `tugay-ipek-cv.pdf` and edit the matching section in `index.html`.
+The Resume button links to https://rxresu.me/tugay20666/tugay-ipek-cv.
